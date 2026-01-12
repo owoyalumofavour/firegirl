@@ -1,0 +1,68 @@
+/* Base styles (light mode) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header styles (if uncommented) */
+header {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Content sections */
+#Interests, #Portfolio, #Contact {
+    margin-bottom: 30px;
+}
+
+/* List styles */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Link styles */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+/* Button styles */
+#theme-toggle {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000; /* default dark theme button */
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* Dark mode styles using a class */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Optional: Style toggle button in dark mode */
+body.dark-mode #theme-toggle {
+    background-color: #fff;
+    color: #000;
+}
